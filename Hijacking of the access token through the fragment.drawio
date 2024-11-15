@@ -1,0 +1,128 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.4">
+  <diagram name="Page-1" id="c4P0QMS0-4G8p_oBopXX">
+    <mxGraphModel dx="1120" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PDgRdPxH8ZEeAix5t_-z-72" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/woothemes/PNG/intruder.png" vertex="1" parent="1">
+          <mxGeometry x="60" y="35" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgRdPxH8ZEeAix5t_-z-73" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#505050;shape=mxgraph.mscae.intune.user_management" vertex="1" parent="1">
+          <mxGeometry x="240" y="40" width="60" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgRdPxH8ZEeAix5t_-z-74" value="&lt;b&gt;Victim&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="220" y="110" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgRdPxH8ZEeAix5t_-z-75" value="&lt;b&gt;Attacker&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="110" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgRdPxH8ZEeAix5t_-z-76" value="" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.mscae.enterprise.client_application" vertex="1" parent="1">
+          <mxGeometry x="400" y="40" width="109.38" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgRdPxH8ZEeAix5t_-z-77" value="&lt;b&gt;Vulnerable Client&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="389.69" y="110" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgRdPxH8ZEeAix5t_-z-78" value="" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/storage/Datacenter_Server_Half_Rack_ToR.svg;" vertex="1" parent="1">
+          <mxGeometry x="620" y="25.4" width="72.81" height="94.6" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgRdPxH8ZEeAix5t_-z-79" value="&lt;b&gt;Authorization Server&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="115" width="133.6" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgRdPxH8ZEeAix5t_-z-81" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="100" y="140" width="10" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgRdPxH8ZEeAix5t_-z-82" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="270" y="140" width="10" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgRdPxH8ZEeAix5t_-z-83" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="449.69" y="140" width="10" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgRdPxH8ZEeAix5t_-z-84" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="661.8" y="140" width="10" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgRdPxH8ZEeAix5t_-z-85" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="430" as="sourcePoint" />
+            <mxPoint x="120" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PDgRdPxH8ZEeAix5t_-z-86" value="" style="endArrow=classic;html=1;rounded=0;exitX=1.2;exitY=0.191;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="PDgRdPxH8ZEeAix5t_-z-82" target="PDgRdPxH8ZEeAix5t_-z-84">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="290" as="sourcePoint" />
+            <mxPoint x="500" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PDgRdPxH8ZEeAix5t_-z-87" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="390" as="sourcePoint" />
+            <mxPoint x="440" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PDgRdPxH8ZEeAix5t_-z-88" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.031;exitY=0.879;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="PDgRdPxH8ZEeAix5t_-z-83" target="PDgRdPxH8ZEeAix5t_-z-82">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="290" as="sourcePoint" />
+            <mxPoint x="290" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PDgRdPxH8ZEeAix5t_-z-89" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="PDgRdPxH8ZEeAix5t_-z-82">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="660" y="250" as="sourcePoint" />
+            <mxPoint x="500" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PDgRdPxH8ZEeAix5t_-z-90" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.92;entryY=0.342;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.82;exitY=0.182;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="PDgRdPxH8ZEeAix5t_-z-84" target="PDgRdPxH8ZEeAix5t_-z-84">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="200" as="sourcePoint" />
+            <mxPoint x="700" y="240" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="700" y="200" />
+              <mxPoint x="720" y="210" />
+              <mxPoint x="720" y="240" />
+              <mxPoint x="700" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PDgRdPxH8ZEeAix5t_-z-91" value="" style="endArrow=classic;html=1;rounded=0;exitX=1.031;exitY=0.758;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="PDgRdPxH8ZEeAix5t_-z-83">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="370" as="sourcePoint" />
+            <mxPoint x="460" y="430" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="500" y="390" />
+              <mxPoint x="520" y="400" />
+              <mxPoint x="520" y="410" />
+              <mxPoint x="520" y="420" />
+              <mxPoint x="500" y="430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PDgRdPxH8ZEeAix5t_-z-92" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.security.token;" vertex="1" parent="1">
+          <mxGeometry x="300" y="220" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgRdPxH8ZEeAix5t_-z-93" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.security.token;" vertex="1" parent="1">
+          <mxGeometry x="289" y="350" width="31" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgRdPxH8ZEeAix5t_-z-94" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.security.token;" vertex="1" parent="1">
+          <mxGeometry x="120" y="380" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgRdPxH8ZEeAix5t_-z-95" value="&lt;b&gt;HTTP 302&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="680" y="170" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgRdPxH8ZEeAix5t_-z-96" value="&lt;b&gt;HTTP 302&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="470" y="360" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgRdPxH8ZEeAix5t_-z-97" value="&lt;b&gt;Hijacking of the access token through the fragment&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="490" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgRdPxH8ZEeAix5t_-z-98" value="&lt;b&gt;Victim authorizes a vulnerable client using the implicit grant type&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="289" y="160" width="151" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgRdPxH8ZEeAix5t_-z-99" value="&lt;b&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Victim&#39;s browser loads the redirect URI page with the access token in the fragment, the page redirects to the attacker&#39;s server&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="289" y="300" width="141" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgRdPxH8ZEeAix5t_-z-100" value="&lt;b&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Victim&#39;s browser fetches the attacker&#39;s page and appends the fragment with the access token to the redirect URI&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="150" y="370" width="110" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
