@@ -1,0 +1,50 @@
+IAM Excellence: Essential Skills and Knowledge for Aspiring professionals:::
+
+
+Experience in architecting and designing IAM Solutions.
+
+Strong expertise in designing Solutions with the standard IAM platforms like OKTA, PingFederate in enabling SSO Services for both Cloud and on-prem applications.
+
+Hands-on experience in building SSO Solutions with various protocosl like SAML, OAuth/OIDC and header-based applications.
+
+Good undertstanding of the latest Security principle like Zero trust and passwordless authentication to implement new standards in the authentication model.
+
+Experience in Directory Services like Oracle LDAP, AD, PingDirectory.
+
+Experience in building MFA solutions with PingID.
+
+Ability to implement automated provisioning of endpoint by using custom provisioning flows, SCIM or JIT capabilities.
+
+Great problem solving skills.
+
+Excellent understanding of REST integration concepts.
+
+Strong experience with JAVA, C# or another object-oriented programming language.
+
+Experience in HTML, CSS & JavaScript.
+
+Experience with Python, Ruby, PowerShell or other Scripting languages.
+
+Should be able to resolve code conflicts when multiple developers have worked on the same file.
+
+Strong core Java knowledge and development experience.
+
+Strong experience in multi-threading & Synchronization, concurrency, Garbage collection and performance optimization.
+
+Should have experience in Java performance tuning.
+
+Familiarity with Agile and DevOps tools and methodolgies.
+
+Expeience with cloud platforms like GCP, AWS or Azure.
+
+IAM Platform certification.
+
+
+
+
+
+
+
+
+
+
