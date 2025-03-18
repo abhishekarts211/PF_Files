@@ -1,0 +1,133 @@
+
+
+OIDC SLO handling in PingFederate:
+
+
+Problem statement: We have an application team supporting standard OAuth/OIDC with PingFederate. They are wanting to adjust their application's Logout link to log the user out from the IDP and then redirect them to the application's login page. 
+
+Solution:
+If you are using the /idp/startSLO.ping endpoint you should be able to include a TargetResource in the call which indicates where the user is redirected after a successful SLO. If this parameter is not included in the request, PingFederate uses as a default the URL for a successful SLO as entered on the IdP Default URL screen. 
+
+Note that the parameter value must be URL-encoded.
+
+For an example:
+
+<pingfederate base URL>/idp/startSLO.ping?TargetResource=https%3A%2F%2Fabc.com%2Flogout%0A
+
+PingFederate admin console -> Security -> Redirect Validation
+
+Enable Target Resource validation for SLO and Other
+
+Add the valid Domain name and Path
+
+Enable for SLO
+
+
+
+PF version 12
+https://docs.pingidentity.com/pingfederate/latest/administrators_reference_guide/pf_configuring_oauth_clients.html
+
+	
+NOTE: If the Track User Sessions for Logout checkbox is selected in System > Server > Authorization Server Settings, the Client page also displays the following:
+
+Logout Mode list
+
+PingAccess Logout Capable checkbox
+
+Front-Channel Logout URIs field
+
+Back-Channel Logout URI field
+
+Post-Logout Redirect URIs field
+
+
+
+Logout Mode
+Select one of the following options:
+
+None: When selected, PingFederate doesn’t send logout requests or tokens to the client.
+
+OIDC Front-Channel: When selected, PingFederate sends logout requests, using the browser, to replying parties' Front-Channel Logout URI. This feature conforms to the OpenID Connect Front-Channel Logout specification.
+
+Ping Front-Channel: When selected, PingFederate sends logout requests, using the browser, to PingAccess and additional requests to other relying parties.
+
+OIDC Back-Channel: When selected, PingFederate sends a logout token to the client’s Back-Channel Logout URI. This feature conforms to the OpenID Connect Back-Channel Logout specification.
+
+
+================================================================================================================================================================
+
+Front-Channel Logout:
+Front-channel logout involves the user’s browser in the logout process.
+
+It requires the user's interaction with a page or redirect to initiate the logout process.
+
+Typically, this happens through HTTP redirects, where the browser is sent to various URLs (such as an identity provider or other services) to notify them that the user has logged out.
+
+The front-channel logout works in the user’s browser (the front end), and as such, the browser is used to propagate the logout event.
+
+Example:
+
+A user clicks "logout" in the app.
+The app sends a request to the identity provider's logout endpoint.
+The browser is redirected to logout from other services, including possibly clearing cookies and session data.
+
+Back-Channel Logout:
+Back-channel logout occurs behind the scenes and does not require the user's browser.
+
+This method typically uses server-to-server communication to notify the relevant services that the user has logged out.
+
+In back-channel logout, the user's session is terminated at the backend, and other services are informed using APIs or secure server-side requests without involving the user's browser.
+
+Example:
+
+When a user logs out, the backend of the application sends a secure request to other systems or identity providers to inform them of the logout.
+This allows for a more seamless logout process, as the user does not have to be redirected through multiple pages.
+
+===============================================================================================================================================================
+
+
+PingAccess Logout Capable::
+When selected, PingFederate sends logout requests through the browser to an OIDC endpoint in PingAccess as part of the logout process. Learn more in OpenID Connect endpoints in the PingAccess documentation. This checkbox is cleared by default.
+
+Front-Channel Logout URIs::
+Enter additional endpoints at the relying parties as needed. When the Logout Mode is set to OIDC Front-Channel or Ping Front-Channel, PingFederate sends requests to these URIs through the browser as part of the logout process. For Ping Front-Channel mode, the relying parties must return an image in their logout responses. Otherwise, PingFederate returns an error message or redirects to the InErrorResource parameter value, if specified.
+
+Back-Channel Logout URI::
+When the Logout Mode is set to OIDC Back-Channel, PingFederate sends a logout token to the client’s Back-Channel Logout URI.
+
+Post-Logout Redirect URIs::
+URIs to which the OpenID Provider (OP) can redirect the end-user’s user agent after a logout is performed, if the relying party (RP) initiated logout request includes the post_logout_redirect_uri parameter and it matches one the URIs configured in this field.
+
+Enter a fully qualified URL and click Add for each entry required. Wildcards are allowed but for security reasons, make the URL as restrictive as possible. For example: https://www.example.com/OAuthClientApp/postLogout.jsp
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
