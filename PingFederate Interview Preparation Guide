@@ -1,0 +1,413 @@
+PingFederate Interview Preparation Guide (IAM)
+
+
+🚀 Overview
+
+This file contain a carefully curated set of real-world interview questions based on:
+
+✅ 7+ years of IAM experience
+✅ 100+ interviews taken
+✅ 40+ interviews attended
+✅ Exposure to Product, Service & Consulting companies
+
+The goal is simple:
+
+👉 Help you assess your readiness
+👉 Help you think like an IAM engineer (not just memorize)
+👉 Prepare you for real interview scenarios
+
+🎯 How to Use
+Try answering each question yourself
+Focus on explanation + scenario thinking
+Practice
+
+📚 Interview Questions
+
+1-> Difference between SSO and Federation?
+
+2-> What is the difference between IDP-initiated and SP-initiated SSO?
+
+3-> How does SAML work?
+
+4-> How does Digital Signature work in SAML communication?
+
+5-> What is AuthnContext in a SAML AuthnRequest?
+
+6-> What is the difference between Authentication and Authorization in SAML?
+
+7-> What are the different SAML bindings (HTTP Redirect, POST, Artifact)?
+
+8-> What is the purpose of metadata in SAML?
+
+9-> What is NameID format? Explain different types.
+
+10-> What is RelayState and why is it used?
+
+11-> How is security ensured in SAML (signing, encryption, certificates)?
+
+12-> What are common vulnerabilities in SAML implementations?
+
+13-> How do you troubleshoot SAML authentication failures?
+
+14-> What is Assertion Consumer Service (ACS) URL?
+
+15-> How does SAML handle session management and logout (SLO)?
+
+16-> What is clock skew and how do you handle it?
+
+17-> How can you correlate SAML request and response?
+
+18-> Signature validation is failing — what could be the reasons?
+
+19-> Will SSO work without a SAML certificate?
+
+20-> PingFederate uses what type of encryption for SAML response — symmetric or asymmetric?
+
+21-> How do you force authentication for a SAML application?
+
+22-> How does authentication policy work in PingFederate?
+
+23-> How do you distinguish between Intranet and Internet users in an authentication policy?
+
+24-> How does Kerberos authentication work? Explain.
+
+25-> How does RADIUS authentication work? Explain.
+
+26-> Scenario-Based Questions (Linux + PowerShell)
+
+🔹 a. Service Health Check & Auto-Recovery
+
+👉 Scenario:
+Your application service (e.g., PingFederate) goes down unexpectedly.
+
+👉 Question:
+Write a script that:
+
+Checks if the service is running
+If not, starts the service
+Logs timestamp + action taken
+Sends alert (optional)
+
+🔹 b. Log Monitoring & Alerting
+
+👉 Scenario:
+You need to monitor logs for critical errors.
+
+👉 Question:
+Write a script that:
+
+Continuously scans logs
+Captures only ERROR or FATAL entries
+Stores them in a separate file
+Triggers alert if count > threshold
+
+🔹 c. Disk Space Monitoring
+
+👉 Scenario:
+Server crashes due to full disk.
+
+👉 Question:
+Write a script that:
+
+Checks disk usage
+If usage > 80%
+Cleans old logs OR sends alerts
+Logs actions performed
+
+🔹 d. Port Availability Check
+
+👉 Scenario:
+Application is not accessible via browser.
+
+👉 Question:
+Write a script that:
+
+Checks if required port (e.g., 9031) is listening
+If not:
+Identify conflicting process OR
+Restart the service
+Log results
+
+🔹 e. Automated Log Rotation / Cleanup
+
+👉 Scenario:
+Logs are growing too large.
+
+👉 Question:
+Write a script that:
+
+Finds log files older than X days
+Compresses or deletes them
+Logs cleanup summary
+
+🔹 f. Deployment Validation Script
+
+👉 Scenario:
+After deployment, quick validation is required.
+
+👉 Question:
+Write a script that:
+
+Checks service status
+Verifies port availability
+Hits a health endpoint (curl / Invoke-WebRequest)
+Generates a final “PASS/FAIL” report
+
+🔹 g. Capture Output & Error Handling
+
+👉 Scenario:
+You run a command and need structured logging.
+
+👉 Question:
+Write a script that:
+
+Executes a command
+Stores success output in one file
+Stores errors in another file
+Logs exit status
+
+🔹 h. CPU / Memory Spike Detection
+
+👉 Scenario:
+System becomes slow intermittently.
+
+👉 Question:
+Write a script that:
+
+Monitors CPU and memory
+If threshold exceeds:
+Capture top processes
+Save snapshot to file
+Repeat at intervals
+
+27-> Write a cron job to run a script every day at 11:30 PM for log cleanup (e.g., PingFederate logs).
+
+28-> Write a cron job to run a script every Monday at 2 AM for weekly backup.
+
+29-> How does automated user & group provisioning work? Explain SCIM or JIT capabilities.
+
+30-> Scenario:
+You need to customize the login page to capture an additional field (e.g., Employee ID) along with username/password.
+
+👉 Question:
+How would you customize the HTML Form Adapter to:
+
+Add a new input field
+Capture the value in PingFederate
+Map it to an attribute contract for downstream use
+
+31-> Scenario:
+Business wants a branded login page with custom UI (logo, colors, error messages).
+
+👉 Question:
+How would you modify the HTML Form Adapter templates to:
+
+Apply custom styling (CSS/JS)
+Handle and display authentication errors dynamically
+Maintain compatibility during upgrades
+
+32-> Scenario:
+You have PingFederate running in a cluster model. Now business expects increased authentication load next month.
+
+👉 Question:
+How would you add a new server to your existing cluster setup?
+
+33-> What is high availability architecture in SSO?
+
+34-> How would you develop an OGNL expression for the below scenario (explain the approach/algorithm)?
+
+👉 Problem:
+Extract company name based on email domain.
+
+👉 Example:
+
+John@xyz.com
+ → XYZ
+John@abc.com
+ → ABC
+
+35-> How would you develop an OGNL expression for the below scenario (explain the approach/algorithm)?
+
+👉 Problem Statement:
+
+Retrieve group DNs from multiple directories (OpenDJ, Azure AD)
+Extract CN from DN
+Identify groups starting with ODS_ or AAD_
+Combine and return as a single SAML attribute
+
+36-> How would you develop an OGNL expression for the below scenario (explain the approach/algorithm)?
+
+👉 Problem Statement:
+Group-based authorization for Guest users:
+
+Identify guest users (AAD)
+Validate group membership
+Allow only approved group users
+Deny access if not part of required group
+Internal users should bypass checks
+
+37-> Give an example where PingFederate works both as an IDP and SP.
+
+38-> In what scenarios are Reference ID or OpenToken adapters used?
+
+39-> Explain a major issue you fixed:
+
+How did you identify it?
+How did you collaborate with teams?
+What was your approach to resolution?
+
+40-> How can you use PingFederate Admin REST APIs to automate tasks like:
+
+Application onboarding
+Certificate renewal
+
+41-> Scenario:
+You have 5000 SSO connections using a wildcard certificate that will expire in 3 months.
+
+👉 Question:
+How would you plan and execute certificate renewal across all applications?
+
+42-> What is the difference between Workforce IAM and Customer IAM (CIAM)?
+
+43-> How do you design a Guest user authentication model in PingFederate?
+
+44-> Scenario:
+An OAuth application needs to call a third-party SAML-based application.
+
+👉 Question:
+How will PingFederate handle token exchange (JWT → SAML)?
+
+45-> How are PingOne Advanced Services configured?
+
+46-> How do you upgrade PingFederate with zero downtime?
+
+47-> What is Zero Trust Authentication, and how do you implement it in PingFederate?
+
+48-> How do you onboard an application in PingFederate? What information is required from the application team?
+
+49-> How does PingFederate handle cluster sessions?
+(Request goes to Engine 1 and then Engine 2 — how is session maintained?)
+
+50-> How does PingFederate handle Refresh Tokens?
+
+51-> What are the risks of using refresh tokens in SPAs, and how does PingFederate handle them?
+
+52-> What are different types of OAuth grants, and where are they used?
+
+53-> Explain the workflow of Authorization Code vs PKCE.
+
+54-> Difference between SAML vs OAuth vs OIDC with examples.
+
+55-> How does a Resource Server validate the signature of an Access Token?
+
+56-> What are different types of Access Tokens? Explain.
+
+57-> What are common vulnerabilities in OAuth?
+
+58-> How do you handle CORS?
+
+59-> Are you familiar with Agile methodologies?
+
+60-> Explain REST vs SOAP web services.
+
+61-> How does delegated authentication work?
+
+62-> What is header-based authentication?
+
+63-> Scenario:
+An application supports both SAML and OIDC.
+
+👉 Question:
+How would you help the application team choose the right SSO standard?
+
+64-> How do you handle token revocation and introspection in PingFederate?
+
+65-> How do you force authentication in OAuth applications in PingFederate?
+
+66-> How do you handle logout (SLO) for OAuth applications in PingFederate?
+
+67-> How do you design passwordless authentication in PingFederate?
+
+68-> How does certificate-based authentication work?
+
+69-> What is a fragment in PingFederate?
+
+70-> Difference between authentication policy contract and adapter in PingFederate.
+
+71-> Authorization Code Flow with PKCE
+
+👉 Explain:
+
+Why PKCE is critical (even for confidential clients)
+What attacks it prevents
+How code_verifier and code_challenge work
+
+72-> Multi-Resource Token Handling
+
+👉 Scenario:
+One client needs access to multiple APIs.
+
+👉 Question:
+
+How would you design scopes and audiences?
+Would you issue one token or multiple tokens? Why?
+
+73-> Client Authentication Methods
+
+👉 Compare:
+
+client_secret_basic
+client_secret_post
+private_key_jwt
+mTLS
+
+👉 Which one is most secure and why?
+
+74-> Logout & Session Management (OIDC)
+
+👉 Explain:
+
+Front-channel logout
+Back-channel logout
+
+👉 What challenges arise in distributed systems?
+
+75-> What could be the possible reasons if PingFederate is not issuing an access token?
+
+76-> Where does PingFederate store its configuration?
+
+77-> Does PingFederate have its own database?
+
+78-> What do you understand by on-premise vs cloud architecture?
+
+79-> What is FIDO authentication protocol?
+
+80-> What are the security risks of long-lived tokens, and how do you mitigate them?
+
+81-> What is the role of JWKS endpoint, and how does key rotation work?
+
+82-> Security Attack Scenario
+
+👉 Scenario:
+An attacker steals an access token.
+
+👉 Question:
+
+What damage can be done?
+How do you minimize the impact?
+
+83-> How do you design error handling while building authentication policies in PingFederate?
+
+
+
+🧠 Final Note
+
+If you can:
+
+Answer these confidently
+Explain with real-world examples
+Solve scenarios logically
+
+👉 You are ready for IAM interviews in top companies.
+
+
